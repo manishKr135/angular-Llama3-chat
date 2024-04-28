@@ -1,0 +1,86 @@
+
+.query-section{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+
+    #query{
+      width: 500px;
+      border: none;
+      border-bottom: 1px solid gray;
+      
+      border-radius: 5px;   
+      outline: none;   
+      padding: 5px;
+    }
+    .query-box{
+       margin-right: 30px;
+       
+    }
+
+    .query-button {
+        background-color: #e7b73d;
+        border: 0 solid #E5E7EB;
+        border-radius: 0px 40px 40px 0px;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: flex;
+        font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 1.75rem;
+        padding: .75rem 1.65rem;
+        position: relative;
+        text-align: center;
+        text-decoration: none #000000 solid;
+        text-decoration-thickness: auto;
+        width: 50%;
+        max-width: 100px;
+        position: relative;
+        cursor: pointer;
+        transform: rotate(-2deg);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        // @include arrow($red);
+      }
+      
+      .query-button:focus {
+        outline: 0;
+      }
+      
+      .query-button:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #000000;
+        border-radius: 0px 40px 40px 0px;
+        bottom: 4px;
+        left: 4px;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+      }
+      
+      .query-button:hover:after {
+        bottom: 2px;
+        left: 2px;
+      }
+      
+      @media (min-width: 768px) {
+        .query-button {
+          padding: .75rem 3rem;
+          font-size: 1.25rem;
+        }
+      }
+}
+
+.container{
+  margin-left: auto;
+
+
+}

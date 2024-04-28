@@ -5,3 +5,12 @@
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
  
 @import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
+@import 'assets/scss/global';
+@import 'assets/scss/mixin';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

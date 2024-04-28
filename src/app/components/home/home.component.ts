@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Llama3Service } from 'src/app/services/llama3.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -19,7 +20,9 @@ export class HomeComponent {
 
   askLlama(){
     this.llama3ApiService.get(this.query).subscribe((res: any) => {
+      console.log(res); 
       this.result = res.response;
     });
+
   }
 }

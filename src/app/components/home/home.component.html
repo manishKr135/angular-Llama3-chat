@@ -1,7 +1,16 @@
-<div>
-    <input type="text" [(ngModel)]="query" />
-    <button (click)="askLlama()"> Ask</button>
-</div>
-<div>
-    <p>{{result}}</p>
+<div class="wrapper">
+    <div class="query-section">
+        <div class="query-box">            
+                <input  type="text" id="query"  [(ngModel)]="query" autocomplete="false" (keydown.enter)="askLlama()" placeholder="Ask anything..."/>                          
+        </div>
+        
+        <button (click)="askLlama()" class="query-button">➤</button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">{{result}}</div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
 </div>
