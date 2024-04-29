@@ -8,8 +8,15 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">{{result}}</div>
+            <div class="col-md-2 demo"></div>
+            <div class="col-md-8 typewriter" markdown *ngIf="!loading">
+                {{result}}
+            </div>
+            <div class="loading-logo" *ngIf="loading">
+                <div class="loader" ></div>
+                <div class="wave"></div>
+                <div class="please-wait"></div>
+            </div>
             <div class="col-md-2"></div>
         </div>
     </div>

@@ -23,7 +23,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { Llama3Service } from './services/llama3.service';
-
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -50,7 +50,8 @@ import { Llama3Service } from './services/llama3.service';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MarkdownModule.forRoot()
   ],
   providers: [Llama3Service],
   bootstrap: [AppComponent]

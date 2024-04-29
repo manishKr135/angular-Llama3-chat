@@ -81,6 +81,93 @@
 
 .container{
   margin-left: auto;
+  
 
+}
+.loading-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.loader {
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side,#fff 95%,#ffff) 35% 35%/6px 6px no-repeat
+    #e7b73d;
+  animation: l5 3s infinite;
+}
+
+@keyframes l5 {
+  0%,11%   {background-position:35% 35%}
+  14%,36%  {background-position:65% 35%}
+  38%,61%  {background-position:65% 65%}
+  64%,86%  {background-position:35% 65%}
+  88%,100% {background-position:35% 35%}
+}
+
+.wave {
+  height: 20px;
+  width: 6%;
+  margin-bottom: 50px;
+  aspect-ratio: 6;
+  --c: #0000 64%,#000 66% 98%,#0000 101%;
+  background:
+    radial-gradient(35% 146% at 50% 159%,var(--c)) 0 0,
+    radial-gradient(35% 146% at 50% -59%,var(--c)) 25% 100%;
+  background-size: calc(100%/3) 50%;
+  background-repeat: repeat-x;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1{
+  to {background-position: 50% 0,75% 100%}
+}
+
+.please-wait {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  white-space: pre;
+  font-size: 30px;
+  line-height: 1.2em;
+  height:1.2em;
+  overflow: hidden;
+}
+.please-wait:before {
+  content:"Finding...\A⌰inding...\A⌰⍜nding...\A⌰⍜⏃ding...\A⌰⍜⏃⎅ing...\A⌰⍜⏃⎅⟟ng...\A⌰⍜⏃⎅⟟⋏g...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔"; 
+  white-space: pre;
+  display: inline-block;
+  animation: l39 1s infinite steps(11) alternate;
+}
+
+@keyframes l39 {
+  100%{transform: translateY(-100%)}
+}
+
+.typewriter {
+  // overflow: hidden; /* Ensures the content is not revealed until the animation */
+  // border-right: .15em solid orange; /* The typwriter cursor */
+  // white-space: nowrap; /* Keeps the content on a single line */
+  // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  // letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    focus 1s steps(20, end),
+    
+}
+
+@keyframes focus {
+  from { opacity: 0; }
+  to { opacity: 1;}
 }
