@@ -1,7 +1,7 @@
 <div class="wrapper">
     <div class="query-section">
         <div class="query-box">            
-                <input  type="text" id="query"  [(ngModel)]="query" autocomplete="false" (keydown.enter)="askLlama()" placeholder="Ask anything..."/>                          
+                <input  type="text" id="query"  [(ngModel)]="query" autocomplete="off" (keydown.enter)="askLlama()" placeholder="Ask anything..."/>                          
         </div>
         
         <button (click)="askLlama()" class="query-button">➤</button>
